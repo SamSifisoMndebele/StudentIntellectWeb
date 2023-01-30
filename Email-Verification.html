@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Email Verification</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Email-Verification.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.3.6, nicepage.com">
+    <link rel="icon" href="images/favicon.ico">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Archivo+Black:400">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Student Intellect Auth",
+		"logo": "images/logo_name.svg"
+}</script>
+    <meta name="theme-color" content="#37a18e">
+    <meta property="og:title" content="Email Verification">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <script defer="" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script defer="" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script defer="" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+
+<script defer="" src="js/init-firebase.js"></script></head>
+  <body class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-box-shadow u-clearfix u-custom-color-1 u-header u-sticky u-sticky-0687 u-header" id="sec-84ba"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="javastript:void(0);" class="u-image u-logo u-image-1" data-image-width="2000" data-image-height="518" title="Student Intellect Logo">
+          <img src="images/logo_name.svg" class="u-logo-image u-logo-image-1">
+        </a>
+      </div></header>
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-section-1" id="carousel_05e5" data-image-width="750" data-image-height="500">
+      <div class="u-clearfix u-sheet u-valign-bottom-lg u-valign-bottom-xl u-sheet-1">
+        <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-shape-rectangle u-size-27-md u-size-27-sm u-size-27-xs u-size-30-lg u-size-30-xl u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h3 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-2-base u-text-1"> Email Verification</h3>
+                  <img class="u-image u-image-circle u-image-1" src="images/male-student.jpg" alt="" data-image-width="1280" data-image-height="1707">
+                  <img class="u-image u-image-circle u-image-2" src="images/female-student.jpg" alt="" data-image-width="1280" data-image-height="853">
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-grey-5 u-layout-cell u-opacity u-opacity-20 u-radius-32 u-shape-round u-size-30-lg u-size-30-xl u-size-33-md u-size-33-sm u-size-33-xs u-layout-cell-2">
+                <div class="u-container-layout u-valign-top-sm u-valign-top-xs u-container-layout-2">
+                  <img class="cancel_verification u-image u-image-circle u-image-contain u-preserve-proportions u-image-3" src="images/80c8590267dfc4855ee0f36c89d19fb6858f4b5d83f5b65806a6ed4933f6ee04f821647b11b7c6415aba1876f57786ce217d62d511fa920e50799d_1280.png" alt="Cancel" data-image-width="1280" data-image-height="1280" data-href="javascript:void(0);">
+                  <p class="email_sent_text u-text u-text-palette-4-dark-1 u-text-2">A verification email is sent to email@mail.com, please verify your email address and/or continue bellow.</p>
+                  <a href="javascript:void(0);" class="continue_button u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-2-base u-palette-1-base u-radius-10 u-btn-1">CONTINUE</a>
+                  <a href="javascript:void(0);" class="sent_verification_email_button u-btn u-btn-round u-button-style u-hover-feature u-hover-palette-2-base u-palette-1-base u-radius-10 u-btn-2">Resend Verification Email</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1">
+          <script defer="defer" src="./js/init-firebase.js"></script>
+          <script defer="defer" src="./js/verify-email.js"></script>
+        </div>
+      </div>
+      
+      
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-custom-color-1 u-footer u-footer" id="sec-21de"><div class="u-border-1 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div><p class="u-align-left u-text u-text-1"> © 2023 | Student Intellect | All rights reserved<br>Created and Maintained by AVIDCo Technologies: <a href="mailto:avidco4u@gmail.com" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">avidco4u@gmail.com</a> | <a href="tel:+27721646430" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">+27 (0) 72 164 6430</a>
+      </p></footer>
+  
+</body></html>
